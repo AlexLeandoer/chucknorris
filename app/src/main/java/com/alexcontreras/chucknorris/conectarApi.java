@@ -7,7 +7,7 @@ import retrofit2.http.GET;
  * Created by alexh on 10/11/2017.
  */
 
-public interface Api {
+public interface conectarApi {
     @GET("jokes/random")
-    Call<Chistacos> getChistaco();
+    Call<Chistacos> getChiste();
 }

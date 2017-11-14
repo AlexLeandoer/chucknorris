@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity implements Callback<Chistaco
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
-        Api service = retrofit.create(Api.class);
-        Call<Chistacos> call = service.getChistaco();
+        conectarApi request = retrofit.create(conectarApi.class);
+        Call<Chistacos> call = request.getChiste();
         call.enqueue(this);
     }
 
